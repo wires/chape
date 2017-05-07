@@ -1,0 +1,16 @@
+{
+  "name": "chape",
+  "version": "0.1.0",
+  "description": "trivial jsverify wrapper for tape",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsverify": "^0.8.2",
+    "tape": "^4.6.3"
+  }
+}
