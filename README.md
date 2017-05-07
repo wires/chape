@@ -23,12 +23,12 @@ Simple example, showing something obvious isn't true
 ```js
 const is_not_zero = function (n) { return n !== 0 }
 test('all integers are non-zero', function (t) {
-	t.check(jsc.forall('integer', not_zero))
+	t.check(jsc.forall('integer', is_not_zero))
 	t.end()
 })
 ```
 
 ### More
 
-YMMV, there isn't much too this, it's just a trivial helper, check the source
+YMMV, there isn't much too this, it's just a trivial helper, check the sources
 

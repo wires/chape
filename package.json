@@ -6,9 +6,9 @@
   "scripts": {
     "test": "node test/test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["testing", "test", "quickcheck", "jsc", "jsverify", "tap", "node-tap", "tape"],
+  "author": "<jelle@defekt.nl>",
+  "license": "WTFPL",
   "dependencies": {
     "jsverify": "^0.8.2",
     "tape": "^4.6.3"
