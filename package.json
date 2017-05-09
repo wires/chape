@@ -1,16 +1,27 @@
 {
   "name": "chape",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "trivial jsverify wrapper for tape",
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js"
   },
-  "keywords": ["testing", "test", "quickcheck", "jsc", "jsverify", "tap", "node-tap", "tape"],
+  "keywords": [
+    "testing",
+    "test",
+    "quickcheck",
+    "jsc",
+    "jsverify",
+    "tap",
+    "node-tap",
+    "tape"
+  ],
   "author": "<jelle@defekt.nl>",
   "license": "WTFPL",
   "dependencies": {
-    "jsverify": "^0.8.2",
+    "jsverify": "^0.8.2"
+  },
+  "devDependencies": {
     "tape": "^4.6.3"
   }
 }

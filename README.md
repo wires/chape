@@ -3,9 +3,9 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 
 # chape
 
-This adds a `.check` method to [tape](https://github.com/substack/tape)
-that takes a [jsverify](https://github.com/jsverify/jsverify) property
-and checks it.
+This exports a helper method, which can be used to check a
+[jsverify](https://github.com/jsverify/jsverify) property with
+with [tape](https://github.com/substack/tape).
 
 If `tape` is new to you, see http://www.macwright.org/2014/03/11/tape-is-cool.html
 for some propaganda.
@@ -17,8 +17,9 @@ for some propaganda.
 then
 
 ```js
-const test = require('chape').test
-const jsc = require('chape').jsc
+const test = require('tape').test
+const jsc = require('jsverify')
+const check = require('check')
 ```
 
 Simple example, showing something obvious isn't true
@@ -26,7 +27,7 @@ Simple example, showing something obvious isn't true
 ```js
 const is_not_zero = function (n) { return n !== 0 }
 test('all integers are non-zero', function (t) {
-	t.check(jsc.forall('integer', is_not_zero))
+	check(jsc.forall('integer', is_not_zero), t)
 	t.end()
 })
 ```
